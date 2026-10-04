@@ -1,0 +1,6 @@
+{
+  "name": "Portfólió Mentő - Inflációkövetési & Indexálási Tanácsadó",
+  "description": "Empatikus és professzionális pénzügyi diagnosztika, infláció elleni tőkevédelem és indexálási útmutató ügyfeleknek és tanácsadóknak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
