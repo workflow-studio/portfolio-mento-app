@@ -271,7 +271,7 @@ async function startServer() {
   const isProd = process.env.NODE_ENV === 'production';
 
   app.get('/', (req, res) => {
-    res.redirect('/portfolio-mento/');
+    res.redirect('/portfolio-mento-app/');
   });
 
   if (!isProd) {
@@ -282,7 +282,7 @@ async function startServer() {
     });
     app.use(vite.middlewares);
   } else {
-    app.use('/portfolio-mento', express.static(path.resolve(__dirname, 'dist')));
+    app.use('/portfolio-mento-app', express.static(path.resolve(__dirname, 'dist')));
     app.get('*', (req, res) => {
       res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
     });
