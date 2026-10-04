@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
-  base: '/portfolio-mento-app/',
+  base: '/', // Fontos: Netlify-on a gyökérkönyvtár kell!
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
